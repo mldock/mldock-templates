@@ -1,0 +1,9 @@
+container_dir: container
+image_name: 0.9.0-aws-py38-cpu
+mldock_module_dir: src
+routines:
+  deploy:
+  - python src/container/prediction/serve.py
+  train:
+  - python src/container/training/train.py
+template: aws
